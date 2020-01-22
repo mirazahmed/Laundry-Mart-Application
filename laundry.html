@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Miraz Laundry Mart</title>
+</head>
+<body id="main">
+        
+  <h1>Miraz Laundry Mart</h1>
+
+  <section id ="laundryDetails"> 
+      <div>
+          <h4>Cothes Types</h4>
+          <p>
+              <span id ="Cotton">Cotton</span> <br> <br>
+              <span id ="Denim"></span>Denim <br> <br>
+              <span id ="Other">Other</span>
+              
+          </p>
+
+      </div>
+                      
+      
+      <div>
+            <h4>lbs</h4> 
+
+            <p id="cottonQtyChange">
+
+                <input type ="button" id ="delCottonQty" value="-"> 
+                <span id="ctnQty">1</span>
+                <input type ="button" id ="addCottonQty" value="+"> 
+
+            </p>
+
+            <p id="denimQtyChange">
+                <input type ="button" id ="delDenimQty" value="-"> 
+                <span id="denQty">1</span>
+                <input type ="button" id ="addDenimQty" value="+">  
+    
+            </p>
+
+            <p id="otherQtyChange">
+                <input type ="button" id ="delOtherQty" value="-"> 
+                <span id="othrQty">1</span>
+                <input type ="button" id ="addOtherQty" value="+"> 
+    
+            </p>
+
+
+      </div>
+
+                    
+      <div>
+
+            <h4>Price(per lb)</h4>
+            <p>
+                $<span id="cottonPrice">1.00</span> <br> <br>
+                $<span id= "denimPrice">2.75</span><br> <br>
+                $<span id= "otherPrice">0.65</span>
+            </p>
+      </div>
+      
+
+      <div>
+            
+           <h4>Cost to Wash</h4>
+           <p>
+               <span id="ctnWashCost">$1.00</span> <br> <br>
+               <span id= "denimWashCost">$2.75</span><br> <br>
+               <span id= "otherWashCost">$0.65</span>
+           </p>
+      </div>
+  </section>
+
+  <input type ="button" id ="calculate" value="Calculate"> 
+
+  <div>
+        <p>
+          No of lbs clothes Washed:<span id = "lbsOfClothes"></span>
+        </p>
+        
+        <p>
+            Cost of Washing all Clothes:<span id = "costOfClothes"></span>
+        </p>
+        
+        <p>
+           HST:<span id = "hst"></span>
+        </p>
+        
+        <p>
+           Final Price:<span id = "finalPrice"></span>
+        </p>
+
+  </div>
+
+  <br> <br>
+
+  
+      <p>Do you want to dry clothes??
+            <input type ="button" id ="wishToDry" value= "Click to Enter"> 
+      </p>
+
+      <div id ="costForDry">
+
+            <input type ="text" id ="yesNo" placeholder="Enter Y or N"><br>
+
+            <input type ="button" id ="recalculate" value="Recalculate">
+      </div>
+      
+      
+
+  
+
+    <script type="text/javascript" src="laundry.js"></script>
+</body>
+
+</html>
